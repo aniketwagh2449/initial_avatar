@@ -1,39 +1,102 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Initial Avatar
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+A lightweight and customizable Flutter widget that generates profile avatars using the initials of a user's name.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+No additional dependencies required!
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- Automatically generate initials from a name.
+- Support single names and full names.
+- Customizable avatar radius.
+- Custom background color.
+- Custom text color.
+- Lightweight and easy to use.
+- Built with Flutter's `CircleAvatar`.
 
-## Getting started
+## Installation
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Add the following dependency to your `pubspec.yaml`:
+
+```yaml
+dependencies:
+  initial_avatar: ^0.0.1
+```
+
+Or run:
+
+```bash
+flutter pub add initial_avatar
+```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Import the package:
 
 ```dart
-const like = 'sample';
+import 'package:initial_avatar/initial_avatar.dart';
 ```
 
-## Additional information
+Use the widget:
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```dart
+const InitialAvatar(
+  name: 'John Doe',
+  radius: 30,
+  backgroundColor: Colors.blue,
+  textColor: Colors.white,
+)
+```
+
+This displays a circular avatar with the initials `JD`.
+
+### Single name
+
+```dart
+const InitialAvatar(
+  name: 'John',
+)
+```
+
+This displays `J`.
+
+### Custom colors
+
+```dart
+const InitialAvatar(
+  name: 'Alex Smith',
+  radius: 40,
+  backgroundColor: Colors.purple,
+  textColor: Colors.white,
+)
+```
+
+## Parameters
+
+| Parameter | Type | Default | Description |
+|---|---|---|---|
+| `name` | String | Required | User's name |
+| `radius` | double | 25 | Avatar radius |
+| `backgroundColor` | Color | Colors.blue | Background color |
+| `textColor` | Color | Colors.white | Initials text color |
+
+## Example
+
+Check the `example` folder for a complete Flutter application demonstrating the package.
+
+## Requirements
+
+- Flutter SDK
+- Dart SDK compatible with the package's SDK constraints
+
+## Issues and Contributions
+
+Found a bug or have an idea for improvement?
+
+Please open an issue or submit a pull request on GitHub:
+
+https://github.com/aniketwagh2449/initial_avatar
+
+## License
+
+This project is licensed under the MIT License.
