@@ -1,6 +1,6 @@
 name: initial_avatar
 description: "description: A customizable Flutter avatar widget that displays user initials or profile images with configurable text styles, borders, colors, tooltips, and tap interactions."
-version: 0.0.2
+version: 0.0.3
 license: MIT
 
 repository: https://github.com/aniketwagh2449/initial_avatar

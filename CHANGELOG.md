@@ -1,4 +1,4 @@
-## 0.0.2
+## 0.0.3
 
 - Added custom initials support.
 - Added text styling options.

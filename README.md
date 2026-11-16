@@ -27,7 +27,7 @@ Add the dependency to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  initial_avatar: ^0.0.2
+  initial_avatar: ^0.0.3
 ```
 
 Or run:
