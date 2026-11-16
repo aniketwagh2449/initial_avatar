@@ -1,7 +1,8 @@
-
 name: initial_avatar
-description: "A simple customizable Flutter avatar widget that generates initials from names."
+description: "A simple customizable Flutter avatar widget."
 version: 0.0.1
+
+repository: https://github.com/aniketwagh2449/initial_avatar
 
 environment:
   sdk: ^3.12.1
