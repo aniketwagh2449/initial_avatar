@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:initial_avatar/initial_avatar.dart';
 
@@ -5,6 +6,7 @@ void main() {
   runApp(const MyApp());
 }
 
+/// The main application widget demonstrating the InitialAvatar package.
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
