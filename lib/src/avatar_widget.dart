@@ -2,32 +2,19 @@
 import 'package:flutter/material.dart';
 
 class InitialAvatar extends StatelessWidget {
-  // User information
   final String name;
   final String? customInitials;
-
-  // Avatar size
   final double radius;
-
-  // Avatar colors
   final Color backgroundColor;
   final Color textColor;
-
-  // Text customization
   final double? fontSize;
   final FontWeight fontWeight;
   final FontStyle fontStyle;
   final String? fontFamily;
   final double letterSpacing;
-
-  // Border customization
   final Color borderColor;
   final double borderWidth;
-
-  // Profile image
   final ImageProvider? backgroundImage;
-
-  // Interaction and accessibility
   final VoidCallback? onTap;
   final String? tooltip;
   final String? semanticsLabel;
@@ -53,8 +40,6 @@ class InitialAvatar extends StatelessWidget {
   })  : assert(radius > 0),
         assert(borderWidth >= 0),
         assert(fontSize == null || fontSize > 0);
-
-  // Generate initials from the user's name
   String get initials {
     if (customInitials != null &&
         customInitials!.trim().isNotEmpty) {
@@ -79,7 +64,6 @@ class InitialAvatar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Avatar with circular border
     Widget avatar = Container(
       width: (radius * 2) + (borderWidth * 2),
       height: (radius * 2) + (borderWidth * 2),
@@ -110,22 +94,16 @@ class InitialAvatar extends StatelessWidget {
             : null,
       ),
     );
-
-    // Handle avatar tap
     avatar = GestureDetector(
       onTap: onTap,
       child: avatar,
     );
-
-    // Add tooltip
     if (tooltip != null) {
       avatar = Tooltip(
         message: tooltip!,
         child: avatar,
       );
     }
-
-    // Add accessibility description
     if (semanticsLabel != null) {
       avatar = Semantics(
         label: semanticsLabel,
