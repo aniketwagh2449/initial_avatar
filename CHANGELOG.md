@@ -1,3 +1,8 @@
-## 0.0.1
+## 0.0.2
 
-* TODO: Describe initial release.
+- Added custom initials support.
+- Added text styling options.
+- Added border customization.
+- Added profile image support.
+- Added tap callback, tooltip, and accessibility label.
+- Added input validation.
